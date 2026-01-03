@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./Login.css";
+import Button from './Button';
 
 export default function Login({ onSubmit }) {
   const [email, setEmail] = useState("");
@@ -48,9 +49,9 @@ export default function Login({ onSubmit }) {
           />
         </label>
 
-        <button type="submit" className="login-button">
+        <Button type="submit" variant="primary" className="login-button">
           Log in
-        </button>
+        </Button>
       </form>
     </div>
   );
